@@ -4,7 +4,7 @@ import parser
 import TOKEN
 
 
-'''
+
 bot=telebot.TeleBot(TOKEN.TOKEN)
 
 sHallo = 'Привет, я пока что не полноценный, но уже могу находить лекарства в фармакопейке, просто введи название того, что тебе нужно!'
@@ -21,3 +21,4 @@ bot.infinity_polling()
 '''
 parser.farmakopeika("цитрамон")
 s = input()
+'''

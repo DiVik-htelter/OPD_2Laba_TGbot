@@ -30,12 +30,12 @@ def sFarm(s):
     s = s.replace('от','Цена от: ')
     s = s.replace('\n\n','\n')
 
-    s =s.split(sep = '\n')
+    rs =s.split(sep = '\n')
 
-    for i in range(len(s)):
+    for i in range(len(rs)):
         if i%4==0:
-            s[i]+='\n'
-    s = "\n".join(s)
+            rs[i]+='\n'
+    s = "\n".join(rs)
     
     print('\n',s,'-'*35)
     if s == '':
