@@ -1,8 +1,6 @@
 import telebot
-
 import parser
 import TOKEN
-
 
 
 bot=telebot.TeleBot(TOKEN.TOKEN)
@@ -18,6 +16,8 @@ def start_message(message):
 def echo_message(message):
   bot.send_message(message.chat.id,text=f"{parser.farmakopeika(message.text)}")
 bot.infinity_polling()
+
+
 '''
 parser.farmakopeika("цитрамон")
 s = input()
